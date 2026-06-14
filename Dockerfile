@@ -1,5 +1,5 @@
-FROm node:18-alpine
+FROM node:18-alpine
 WORKDIR /app
 COPY . .
 EXpose 3000
-CMP ["node", "app.js"]
+CMD ["node", "app.js"]
